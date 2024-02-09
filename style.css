@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; /* Set to 100% of the viewport height */
+    margin: 0; 
+}
+
+#chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns */
+    grid-template-rows: repeat(8, 1fr); /* 8 rows */
+    width: 80vmin; /* Use vmin for both width and height to keep aspect ratio */
+    height: 80vmin; /* This will create a square board that fits the screen */
+    max-width: 500px;
+    max-height: 500px;
+    border: 2px solid #333; /* Optional: adds a border around the board */
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vmin; /* Adjust font size based on viewport, ensuring it scales */
+    cursor: grab; /* Indicates the pieces are draggable */
+}
+
+.black {
+    background-color: #769656;
+}
+
+.white {
+    background-color: #eeeed2;
+}
+
+/* The CSS class for pieces is not needed unless you add other styling rules for the pieces */
