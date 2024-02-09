@@ -14,15 +14,15 @@ body {
     height: 80vmin; /* This will create a square board that fits the screen */
     max-width: 500px;
     max-height: 500px;
-    border: 2px solid #333; /* Optional: adds a border around the board */
+    border: 2px solid #333; 
 }
 
 .square {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5vmin; /* Adjust font size based on viewport, ensuring it scales */
-    cursor: grab; /* Indicates the pieces are draggable */
+    font-size: 5vmin; 
+    cursor: grab; 
 }
 
 .black {
@@ -33,4 +33,3 @@ body {
     background-color: #eeeed2;
 }
 
-/* The CSS class for pieces is not needed unless you add other styling rules for the pieces */
